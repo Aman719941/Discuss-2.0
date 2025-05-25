@@ -1,0 +1,41 @@
+#logo {
+  width: 50px;
+  height: 50px;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px !important;
+}
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+.heading {
+  text-align: center;
+  text-decoration: underline !important;
+}
+a {
+    font-weight: 600 !important;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+body {
+    background-color: #343a40 !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+}
+
+th {
+    text-decoration: underline !important;
+}
+
+/* Styling for all paragraph descriptions within the question container */
+.question-container p {
+    font-size: 1.1em; /* Adjust as needed */
+    line-height: 1.6; /* Slightly increased line-height for better readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+
