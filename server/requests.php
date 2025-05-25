@@ -18,7 +18,7 @@ if (isset($_POST["signup"])) {
     if ($result) {
         // echo "New User Registered SuccessFully !!!...";
         $_SESSION["user"] = ["username" => $username, "email" => $email, "user_id" => $user->insert_id];
-        header("location: /code step by step/discuss2");
+        header("location: /code step by step/Discuss-2.0");
         exit();
     }
 } elseif (isset($_POST["login"])) {
@@ -35,13 +35,13 @@ if (isset($_POST["signup"])) {
             $user_id = $row["id"];
         }
         $_SESSION["user"] = ["username" => $username, "email" => $email, "user_id" => $user_id];
-        header("location: /code step by step/discuss2");
+        header("location: /code step by step/Discuss-2.0");
         exit();
     }
 } elseif (isset($_GET['logout'])) {
     session_unset();
     session_destroy();
-    header("location: /code step by step/discuss2");
+    header("location: /code step by step/Discuss-2.0");
     exit();
 } elseif (isset($_POST["ask"])) {
     // print_r($_POST);
@@ -54,7 +54,7 @@ if (isset($_POST["signup"])) {
     $result = $conn->query($sql);
     if ($result) {
     //   echo"Question inserted Successfully !!!";
-      header("location: /code step by step/discuss2");
+      header("location: /code step by step/Discuss-2.0");
       exit();
     }
 }elseif (isset($_POST["answer"])) {
@@ -65,7 +65,7 @@ if (isset($_POST["signup"])) {
     $result = $conn->query($sql);
     if ($result) {
     //   echo"Question inserted Successfully !!!";
-      header("location: /code step by step/discuss2?Q_id=$Q_id");
+      header("location: /code step by step/Discuss-2.0?Q_id=$Q_id");
       exit();
     }
 }

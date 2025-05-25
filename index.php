@@ -18,7 +18,7 @@
     if (isset($_SESSION['user']['username'])) {
         // User is logged in, redirect them if they try to access login/signup directly
         if (isset($_GET["signup"]) || isset($_GET["login"])) {
-            header("location: /code step by step/discuss2/"); // Or wherever your main logged-in page is
+            header("location: /code step by step/Discuss-2.0/"); // Or wherever your main logged-in page is
             exit(); // Always exit after a header redirect
         }
     }
