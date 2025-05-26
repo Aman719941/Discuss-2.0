@@ -1,0 +1,36 @@
+Discuss-2.0
+├── client
+│   ├── about_me.php
+│   ├── answers.php
+│   ├── ask.php
+│   ├── catagory.php
+│   ├── catagory_list.php
+│   ├── common.php
+│   ├── contact.php
+│   ├── footer.php
+│   ├── header.php
+│   ├── home.php
+│   ├── latest_questions.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── my_blog.php
+│   ├── portfolio.php
+│   ├── question.php
+│   ├── show_all_answers.php
+│   └── signup.php
+├── Discuss-2.0 folder structure.txt
+├── index.php
+├── public
+│   ├── logo.png
+│   ├── script.js
+│   └── style.css
+├── README.md
+├── server
+│   ├── db.php
+│   ├── process_contact.php
+│   └── requests.php
+└── SQL
+    ├── discuss.sql
+    ├── discuss3_0.csv
+    └── discuss3_0.pdf
+

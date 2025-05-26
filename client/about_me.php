@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Discuss_2.0</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         /* Optional: Custom CSS for map and spacing */
@@ -35,12 +34,15 @@
 
 <body>
 
-    <main class="container  margin-top-15">
-        <h1 class="heading margin-bottom-15">Contact Us </h1>
+    <main class="container">
+        <h1 class="heading mt-5  mb-5">Contact Us </h1>
         <section class="mb-5">
             <div class="row">
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h2 class="mb-4">Send us a message</h2>
+                    <!-- Contact form to send messages to the site administrator.
+                         The form action is set to "process_contact.php", which should handle the form submission.
+                         Method is POST for secure data transmission. -->
                     <form action="process_contact.php" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label bold">Your Name</label>
@@ -73,6 +75,8 @@
 
                     <h3 class="mb-3 mt-4">Find Us on Map</h3>
                     <div class="map-container">
+                        <!-- Placeholder for Google Map.
+                             The actual Google Maps embed code should be placed here. -->
                         <p>Google Map Placeholder [coming soon.....]</p>
                     </div>
                 </div>
@@ -80,9 +84,8 @@
         </section>
     </main>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 

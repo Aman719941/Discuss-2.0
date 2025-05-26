@@ -1,4 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<?php
+/**
+ * This file contains the header navigation bar for the website.
+ * It includes the logo, navigation links, and a search bar.
+ * The navigation links dynamically change based on user login status.
+ */
+?>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
   <div class="container-fluid">
     <a class="navbar-brand" href="?logo=true"><img id="logo" src="./public/logo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -11,16 +18,17 @@
           <a class="nav-link active" aria-current="page" href="?home=true">Home</a>
         </li>
 
-        <?php if (isset($_SESSION['user']['username'])) { ?> 
+        <?php
+        // Check if a user session exists (i.e., user is logged in).
+        if (isset($_SESSION['user']['username'])) {
+        ?>
           <li class="nav-item">
             <a class="nav-link" href="./server/requests.php?logout=true">LogOut<?php echo"<b style='color: blue'> (".ucfirst($_SESSION['user']['username']).") </b>";?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="?ask=true">Ask A Question</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link " href="?question=true">Question page</a>
-          </li> -->
+
         <?php } else { ?>
           <li class="nav-item">
             <a class="nav-link" href="?login=true">Login</a>
@@ -29,10 +37,10 @@
             <a class="nav-link " href="?signup=true">Signup</a>
           </li>
         <?php } ?>
-<!-- 
+
         <li class="nav-item">
-          <a class="nav-link " href="?catagory=true">Catagory</a>
-        </li> -->
+          <a class="nav-link " href="?catagory=true">Category</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link " href="?latest_questions=true">Latest Questions</a>
         </li>

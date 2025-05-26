@@ -1,41 +1,32 @@
+/* Styling for the logo image */
 #logo {
-  width: 50px;
-  height: 50px;
+  width: 50px;  /* Sets the width of the logo */
+  height: 50px; /* Sets the height of the logo */
 }
 
-.margin-bottom-15 {
-  margin-bottom: 15px !important;
-}
-.margin-top-15 {
-  margin-top: 15px !important;
-}
-
+/* Styling for elements with the 'heading' class */
 .heading {
-  text-align: center;
-  text-decoration: underline !important;
+  text-align: center;            /* Centers the text horizontally */
+  text-decoration: underline !important; /* Underlines the text, !important ensures it overrides other styles */
 }
+
+/* Styling for all anchor (link) elements */
 a {
-    font-weight: 600 !important;
+  font-weight: 600 !important; /* Sets the font-weight to bold, !important ensures it overrides other styles */
 }
 
+/* Styling for elements with the 'bold' class */
 .bold {
-    font-weight: 600 !important;
+  font-weight: 600 !important; /* Sets the font-weight to bold, !important ensures it overrides other styles */
 }
 
+/* Styling for the body of the HTML document */
 body {
-    background-color: #343a40 !important; /* Dark background */
-    color: #ffffff !important; /* White text */
+  background-color: #343a40 !important; /* Sets a dark background color, !important ensures it overrides other styles */
+  color: #ffffff !important; /* Sets the text color to white, !important ensures it overrides other styles */
 }
 
+/* Styling for table header cells */
 th {
-    text-decoration: underline !important;
+  text-decoration: underline !important; /* Underlines the text in table headers, !important ensures it overrides other styles */
 }
-
-/* Styling for all paragraph descriptions within the question container */
-.question-container p {
-    font-size: 1.1em; /* Adjust as needed */
-    line-height: 1.6; /* Slightly increased line-height for better readability */
-    margin-bottom: 15px; /* Space between paragraphs */
-}
-
-
